@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{80290692-9757-4755-AA3D-ABF785ED4D58}|Default">
+  <MonoDevelop.Ide.ItemProperties.SamplyGame.Droid PreferredExecutionTarget="Android.Nexus_5X_API_23" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/SamplyGame.cs">
+    <Files>
+      <File FileName="Droid/MainActivity.cs" Line="10" Column="25" />
+      <File FileName="Core/SamplyGame.cs" Line="44" Column="15" />
+      <File FileName="Core/Aircrafts/Player.cs" Line="49" Column="4" />
+      <File FileName="Core/Aircrafts/Aircraft.cs" Line="95" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SamplyGame.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2AF05921-361A-4F59-AA83-FD568DDB6871" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

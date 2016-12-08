@@ -149,5 +149,17 @@ namespace SamplyGame
 			coins = amount;
 			coinsText.Value = string.Format(CoinstFormat, coins);
 		}
+
+		public Text createText(string val)
+		{
+
+			var tempText = new Text();
+			tempText.HorizontalAlignment = HorizontalAlignment.Left;
+			tempText.SetFont(ResourceCache.GetFont(Assets.Fonts.Font), Graphics.Width / 20);
+			tempText.Value = val;
+
+			return tempText;
+		}
+
 	}
 }

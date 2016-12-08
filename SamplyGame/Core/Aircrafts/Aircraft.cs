@@ -6,6 +6,7 @@ using Urho.Audio;
 using Urho.Actions;
 using Urho.Shapes;
 using Urho.Urho2D;
+using System;
 
 namespace SamplyGame
 {
@@ -35,6 +36,8 @@ namespace SamplyGame
 		/// Is aircraft alive
 		/// </summary>
 		public bool IsAlive => Health > 0 && Enabled && !IsDeleted;
+
+		public event EventHandler<int> HealthChanged;
 
 		/// <summary>
 		/// Spawn the aircraft and wait until it's exploded
@@ -95,6 +98,7 @@ namespace SamplyGame
 				else if (weapon.Damage > 0)
 				{
 					Hit();
+					//HealthChanged(null, 0);
 				}
 				weapon.OnHit(target: this, killed: killed, bulletNode: bulletNode);
 			}

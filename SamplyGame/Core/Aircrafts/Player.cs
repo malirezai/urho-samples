@@ -17,6 +17,8 @@ namespace SamplyGame
 
 		public override int MaxHealth => 40;
 
+
+
 		protected override async void Init()
 		{
 			var cache = Application.ResourceCache;
@@ -44,6 +46,10 @@ namespace SamplyGame
 
 			await node.RunActionsAsync(new EaseOut(new MoveBy(0.5f, new Vector3(0, 3, 0)), 2));
 			MoveRandomly();
+
+			HealthChanged += (sender, e) => {
+				var i = "hello";
+			};
 
 			// Do an alleron roll each 5 seconds
 			Node.RunActions(new RepeatForever(new DelayTime(5),
