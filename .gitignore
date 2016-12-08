@@ -39,3 +39,6 @@ CoreData.pak
 
 # NuGet Packages Directory
 packages
+
+#workbooks
+*.workbook
